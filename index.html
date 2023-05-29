@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"rel="stylesheet"/>
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"rel="stylesheet"/>
+
+</head>
+<body>
+
+<section id="login-form" class="vh-100">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Log In</p>
+
+                <form class="mx-1 mx-md-4">
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email" id="emailLogin" class="form-control" />
+                      <label id="emailLoginLabel"  class="form-label">Your Email</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="passwordLogin" class="form-control" />
+                      <label id="passwordLoginLabel" class="form-label">Password</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="button" class="btn btn-primary btn-lg">Login</button>
+                  </div>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4 notMember">
+                    <p>Not a member? <a id="signupLink" href="#signup-form">Signup</a></p>
+                  </div>
+
+                </form>
+
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2 d-flex justify-content-center">
+
+                <img src="image/travelLogo1.png"
+                  class="img-fluid" alt="Sample image">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="signup-form" class="vh-100">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+
+                <form id="formsign" method="get" class="mx-1 mx-md-4">
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="name" class="form-control"/>
+                      <label id="f" class="form-label">Your Full Name</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email" id="email" class="form-control"/>
+                      <label id="f1" class="form-label">Your Email</label>
+                    </div>
+                  </div>
+
+                   <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-phone fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="cnumber" class="form-control" />
+                      <label id="f2" class="form-label">Contact Number</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="password" class="form-control" />
+                      <label id="f3" class="form-label">Password</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="password1" class="form-control" />
+                      <label id="f4" class="form-label">Repeat your password</label>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-house fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="address" class="form-control" />
+                      <label id="f5" class="form-label">Address</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4 w-50">
+                    <i class="fas fa-earth-asia fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="zcode" class="form-control" />
+                      <label id="f6" class="form-label">Zip Code</label>
+                    </div>
+                  </div>
+
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                    <label class="form-check-label">
+                      I agree all statements in <a href="#!">Terms of service</a>
+                    </label>
+                  </div>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button id="rbutton" type="submit" class="btn btn-primary btn-lg">Register</button>
+                  </div>
+
+                </form>
+
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2 d-flex justify-content-center">
+
+                <img src="image/travelLogo1.png"
+                  class="img-fluid" alt="Sample image">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+document.getElementById('signup-form').classList.add('d-none');
+
+let name1;
+let email1;
+let number1;
+let pass1;
+let repass1;
+let address1;
+let zcode1;
+    
+
+let name = document.getElementById("name");
+let email = document.getElementById("email");
+let cnumber = document.getElementById("cnumber");
+let password = document.getElementById("password");
+let password1 = document.getElementById("password1");
+let address = document.getElementById("address");
+let zcode = document.getElementById("zcode"); 
+function numbers(value) {
+  return /^\d+$/.test(value);
+}
+let form = document.getElementById('formsign');
+var storeEmail;
+var storePass;
+
+
+name.onkeyup = (e) => {
+    if (e.target.value.length > 20) {
+       document.getElementById("f").style.color = "red";
+       document.getElementById("f").innerHTML = "Maximum of 20 characters only.";
+    } else {
+        name1 = e.target.value;
+        document.getElementById("f").style.color = "";
+        document.getElementById("f").innerHTML = "Your Full Name";
+    }
+}
+
+email.onkeyup = (e) => {
+    if (e.target.value.indexOf("@") == -1) {
+       document.getElementById("f1").style.color = "red";
+       document.getElementById("f1").innerHTML = "Must be a valid email.";
+    } else {
+        email1 = e.target.value;
+        document.getElementById("f1").style.color = "";
+        document.getElementById("f1").innerHTML = "Your Email";
+        console.log(email1);
+    }
+}
+
+cnumber.onkeyup = (e) => {
+    if (numbers(cnumber.value) && cnumber.value.length <= 10) {
+      number1 = e.target.value;
+      document.getElementById("f2").style.color = "";
+      document.getElementById("f2").innerHTML = "Contact Number";
+    } else {
+      document.getElementById("f2").style.color = "red";
+      document.getElementById("f2").innerHTML = "Numeric Value and maximum of 10 characters only.";
+    }
+}
+
+password.onkeyup = (e) => {
+    if (e.target.value.length < 8) {
+       document.getElementById("f3").style.color = "red";
+       document.getElementById("f3").innerHTML = "Password length must be atleast 8 characters.";
+    } else {
+        pass1 = e.target.value;
+        document.getElementById("f3").style.color = "";
+        document.getElementById("f3").innerHTML = "Password";
+    }
+}
+
+password1.onkeyup = (e) => {
+    if (e.target.value == password.value) {
+      repass1 = e.target.value;
+      document.getElementById("f4").style.color = "";
+      document.getElementById("f4").innerHTML = "Repeat Password";
+    } else {
+      //  document.getElementById("f4").reset();
+       document.getElementById("f4").style.color = "red";
+       document.getElementById("f4").innerHTML = "Must match with the password field.";
+    }
+}
+
+address.onkeyup = (e) => {
+    if (e.target.value.length > 30) {
+       document.getElementById("f5").style.color = "red";
+       document.getElementById("f5").innerHTML = "Fill the input field.";
+    } else {
+        address1 = e.target.value;
+        document.getElementById("f5").style.color = "";
+        document.getElementById("f5").innerHTML = "Address";
+    }
+}
+
+zcode.onkeyup = (e) => {
+    if (numbers(zcode.value)) {
+       zcode1 = e.target.value;
+       document.getElementById("f6").style.color = "";
+       document.getElementById("f6").innerHTML = "Zip Code";
+    } else {
+        document.getElementById("f6").style.color = "red";
+        document.getElementById("f6").innerHTML = "Must be Numeric Value";
+    }
+}
+
+
+let all = [['name', name1], ['email', email1], ['number', number1], ['password', pass1], ['repassword', repass1], ['address', address1] ['zcode', zcode1]] 
+
+
+form.addEventListener('submit', function(event) {event.preventDefault(); 
+
+let sige = true;  
+
+if (name1 == undefined) {
+       document.getElementById("f").style.color = "red";
+       document.getElementById("f").innerHTML = "Maximum of 20 characters only.";
+       sige = false;
+} 
+
+if (email1 == undefined) {
+       document.getElementById("f1").style.color = "red";
+       document.getElementById("f1").innerHTML = "Must be a valid email.";
+       sige = false;
+}
+
+if (number1 == undefined) {
+      document.getElementById("f2").style.color = "red";
+      document.getElementById("f2").innerHTML = "Numeric Value and maximum of 10 characters only.";
+      sige = false;
+} 
+
+if (pass1 == undefined) {
+       document.getElementById("f3").style.color = "red";
+       document.getElementById("f3").innerHTML = "Password length must be atleast 8 characters.";
+       sige = false;
+} 
+
+if (repass1 == undefined) {
+       document.getElementById("f4").style.color = "red";
+       document.getElementById("f4").innerHTML = "Must match with the password field.";
+       sige = false;
+} 
+
+if (address1 == undefined) {
+       document.getElementById("f5").style.color = "red";
+       document.getElementById("f5").innerHTML = "Fill the input field.";
+       sige = false;
+} 
+
+if (zcode1 == undefined) {
+      document.getElementById("f6").style.color = "red";
+      document.getElementById("f6").innerHTML = "Must be Numeric Value";
+      sige = false;
+} 
+console.log(sige);
+if (sige) {
+  Swal.fire({
+  title: 'Good job!',
+  text: 'Successfully created an account!',
+  icon: 'success',
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+document.getElementById("login-form").classList.add('d-block');
+document.getElementById("login-form").classList.remove('d-none');
+document.getElementById("signup-form").classList.remove('d-block');
+document.getElementById("signup-form").classList.add('d-none');
+storeEmail = email1;
+storePass = pass1;
+name1 = undefined; email1 = undefined; number1 = undefined; pass1 = undefined; repass1 = undefined; address1 = undefined; zcode1 = undefined;
+
+}
+else {
+  Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>',
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+}
+
+} )
+
+let loginform = document.getElementById("login-form");
+let signupform = document.getElementById("signup-form");
+
+let a = document.getElementById('signupLink');
+
+a.addEventListener("click", function() {
+    loginform.classList.remove('d-block');
+    loginform.classList.add('d-none');
+    signupform.classList.remove('d-none');
+    signupform.classList.add('d-block'); 
+    resetForm();
+});
+    
+function resetForm() {
+  let form = document.getElementById("formsign");
+  form.reset();
+}
+
+
+let emailLogin = document.getElementById("emailLogin");
+let emailLoginLabel = document.getElementById("emailLoginLabel");
+let passwordLogin = document.getElementById("passwordLogin");
+let passwordLoginLabel = document.getElementById("passwordLoginLabel");
+
+
+
+emailLogin.onkeyup = (e) => {
+  if (storeEmail == emailLogin.value) {
+      emailLoginLabel.innerHTML = "Matched";
+      emailLoginLabel.style.color = "";
+    } else {
+      emailLoginLabel.innerHTML = "Not Match";
+      emailLoginLabel.style.color = "red";
+    }
+}
+
+passwordLogin.onkeyup = (e) => {
+  if (storePass == passwordLogin.value) {
+      passwordLoginLabel.innerHTML = "Matched";
+      passwordLoginLabel.style.color = "";
+    } else {
+      passwordLoginLabel.innerHTML = "Wrong Password or Email";
+      passwordLoginLabel.style.color = "red";
+    }
+}
+
+    
+
+
+// var storeEmail = [];
+// var storePass = [];
+// var i=0;
+
+//     storeEmail[i] = document.getElementById('email');
+//     storePass[i] = document.getElementById('password');
+
+//     // storing input from register-form
+//     function store() {
+//         localStorage.setItem('email', JSON.stringify(email));
+//         localStorage.setItem('password', JSON.stringify(password));
+//         i++;
+//     }
+
+//      // entered data from the login-form
+// var emailLogin = document.getElementById("emailLogin");
+// var passwordLogin = document.getElementById("passwordLogin");
+
+//     // check if stored data from register-form is equal to data from login form
+//     // stored data from the register-form
+//     for(i=0;i<email.length;i++){
+//         var storedEmail = [];
+//         var storedPassword = [];
+//         storedEmail[i]=localStorage.getItem('email[i]');
+//         storedPassword[i]=localStorage.getItem('password[i]');
+//         if(emailLogin.value == storedEmail[i] && passwordLogin.value == storedPassword[i]) {
+//             alert('You are loged in.');
+//         }else {
+//             alert('ERROR.');
+//         }
+//     }   
+
+
+</script>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
